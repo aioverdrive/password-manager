@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    color: #C2CAE8;
+    background: #111D4A;
+    font-family: "Lato", sans-serif;
+}
+/* 
+------
+Google Fonts CSS
+------
+ */
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* 
+------
+Everything Above <hr>
+------
+ */
+ /* Includes the h1 and h2 */
+.mini-hero { 
+    text-align: left;
+    font-size: 24px;
+    margin: 0 0 0 8%;
+}
+.subtitle {
+    margin: 0 0 50px 5%; /*this looks really ugly but i just wanted to do it to provide i can */
+    transform: translateY(-20px);
+}
+.btn {
+    width: 300px;
+    margin: 0 0 5% 12%; /* copy the mini-hero and subtitle left margin*/
+    padding: 15px 0;
+    background-color: #C2CAE8;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px;
+    color: #3399cc;
+    border: none;
+}
+/* the hr */
+hr {
+    opacity: 0.2;
+    color: C2CAE8;
+    width: 92%;
+}
+/* 
+------
+SLIDER TIME!!! (still above hr)
+------
+ */
+ .slide-container {
+    margin: 0 0 5% 12%;
+    transform: translateY(-15px);
+    width: 300px;
+ }
+ .slider {
+    -webkit-appearance: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    width: 100%;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 12px;
+    box-shadow: 0px 1px 12px 1px black;
+    background: linear-gradient(90deg, rgb(51, 153, 204), 25%, rgb(194, 202, 232));
+ }
+ .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #45F0DF;
+    cursor: pointer;
+ }
+ .slider::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #45F0DF;
+    cursor: pointer;
+ }
+ .slider::after{
+    content: "30";
+    color: #C2CAE8;
+    font-size: 25px;
+    position: absolute;
+    left: 90%;
+    transform: translateY(25px);
+ }
+ .slider::before{
+    content: "10";
+    color: #C2CAE8;
+    font-size: 25px;
+    position: absolute;
+    transform: translateY(20px);
+ }
+ #length {
+    font-size: 125%;
+    opacity: 0.7;
+    transform: translateY(10px);
+ }
+/* 
+------
+Password Display Area (FLEXBOXX)
+------
+ */
+ #password-section {
+    width: 92%;
+    margin: 0 auto;
+    transform: translateY(30px);
+    text-align: center;
+    font-size: 24px;
+ }
+ .passwords {
+    display: flex;
+    justify-content: space-around;
+ }
+ .display-password {
+    color: #3399cc;
+    background-color: rgb(204, 204, 255, 0.2);
+    padding: 10px 20px;
+    width: 40%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+ }
+ .display-password:hover {
+    cursor: pointer;
+    border-bottom: #45F0DF dashed 3px;
+ }
+/* 
+------
+Utility Classes
+------
+ */
+ .blue {
+    color: #3399cc;
+ }
+ /* 
+------
+my attempt at responsiveness (HOLY CRAP IT WORKS)
+------
+ */
+ @media all and (max-width: 600px) {
+    .passwords {
+        flex-wrap: wrap;
+        flex: 1 1 50%;
+    }
+    .display-password {
+        width: 100%;
+    }
+ }

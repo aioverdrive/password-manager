@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <!-- Lato Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+        <title>gnarly password generator</title>
+    </head>
+    <body>
+        <div class="mini-hero">
+            <h1 class="title">Generate a <span class="blue">radical password</span></h1>
+            <h2 class="subtitle lato-light">Never use a lame password 
+                <span class="blue">again.</span></h2>
+        </div><!-- /mini-hero -->
+        
+        
+        <button class="btn" id="generate-btn">Generate some fire 🔥</button>
+        <div class="slide-container">
+            <input type="range" min="10" max="30" value="15" class="slider">
+            <p id="length">Character Length: <span id="char-value"></span></p>
+        </div><!-- /slide-container -->
+        
+        
+        <hr>
+        
+        
+        <!-- I sense flexbox incoming -->
+        <section id="password-section">
+            
+            <div class="passwords">
+                
+            <div class="display-password" id="display1">
+                <p>!l0vEgn@rLy</p>
+            </div>
+            
+            <div class="display-password" id="display2">
+                <p>p@$$w0rDs!</p>
+            </div>
+            
+        </div><!-- /.passwords -->
+        </section><!-- /#password-section -->
+        <script src="/scripts/index.js"></script>
+    </body>
+</html>
