@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
+# Set default behavior to automatically normalize line endings
 * text=auto
+
+# Explicitly set files to LF line endings
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.sh text eol=lf
+
+# Optionally set files to CRLF line endings if needed
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Ensure binary files are not converted
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
